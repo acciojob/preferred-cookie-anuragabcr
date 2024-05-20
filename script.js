@@ -5,7 +5,6 @@ let fontcolor = document.getElementById("fontcolor")
 for (let item of data) {
 	let [key, value] = item.split("=")
 	if (key==='fontsize') {
-		alert(value)
 		fontsize.value = value
 	}
 	if (key==='fontcolor') {
@@ -15,5 +14,5 @@ for (let item of data) {
 let submit = document.querySelector("input[type='submit'][value='Save']")
 submit.addEventListener('click', () => {
 	document.cookie = `fontsize=${fontsize.value}; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/`;
-	document.cookie = `fontsize=${fontcolor.value}; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/`;
+	document.cookie = `fontcolor=${fontcolor.value}; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/`;
 })
