@@ -8,11 +8,11 @@ for (let item of data) {
 	let [key, value] = item.split("=")
 	if (key==='fontsize') {
 		fontsize.value = value;
-    body.style.fontSize  = value;
+	    body.style.fontSize  = value;
 	}
 	if (key==='fontcolor') {
 		fontcolor.value = value;
-    body.style.color = value;
+	    body.style.color = value;
 	}
 }
 let submit = document.querySelector("input[type='submit'][value='Save']")
